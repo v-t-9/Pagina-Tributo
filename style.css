@@ -1,0 +1,349 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:#1b1a1acc ;
+    font-size: 1em;
+    font-family: 'Playfair Display', serif;
+}
+.nav-contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #3a3737;
+    padding: 20px;
+    box-sizing: content-box; 
+}
+li{
+    list-style-type: none;
+    display: inline;
+}
+li a {
+    padding-right:10px;
+    color: #f6f2dd;
+    font-weight: bold;
+    text-decoration: underline 2px;
+    text-decoration-color:#ffdf12;
+}
+li a:hover{
+    color:#ffdf12;
+    text-decoration-color: #f6f2dd;
+}
+li a:visited{
+    text-decoration-color:#ffee02e5;
+    color: #bdaea4;
+}
+h1, h2,h3,h4{
+    text-align: center;
+}
+
+h1, h2,h3, h4, label{
+    color: #f6f2dd;
+}
+
+p{
+    color:#f6f2dd;
+    text-align: justify;
+}
+.grid-inv{
+    display: grid;
+    grid-template-columns: repeat(3, 25fr);
+    grid-template-rows: repeat(2, 10fr); 
+    gap: 1em;
+    margin:1em;
+    
+}
+
+.section-grid{
+    display: grid;
+    grid-template-columns: 50fr auto;
+    grid-template-rows: auto;
+    gap: 1em;
+    align-content: space-evenly;
+    box-sizing: content-box;
+    padding:10px;
+    margin:25px;
+    border: solid 5px #ffdf12;
+}
+.bio{
+    grid-area: 1/1/1/2;
+    padding: 15px;
+    text-align: justify;
+    /*border: solid 5px  #ffdf12;*/
+}
+.foto-bio{
+    grid-area: 1/2/1/3;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.corriente-alterna{
+    position: relative;
+    grid-area: 1/1/1/2;
+}
+#corriente-alterna-article{
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    border: solid 5px #ffdf12;
+}
+#foto-inv-ac{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.central-hidroelectrica {
+    position: relative;
+    grid-area: 1/2/1/3;
+}
+
+#central-hidroelectrica-article {
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    border: solid 5px #ffdf12;
+}
+
+#foto-inv-central-hidroelectrica {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.radio {
+    position: relative;
+    grid-area: 2/2/2/3;
+    
+}
+
+#radio-article {
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    border: solid 5px #ffdf12;
+}
+
+#foto-inv-radio {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+}
+.bobina {
+    position: relative;
+    grid-area: 2/1/2/2;
+}
+
+#bobina-article {
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    border: solid 5px #ffdf12;
+}
+
+#foto-inv-bobina {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+}
+.lampara-neon {
+    position: relative;
+    grid-area: 1/3/1/4;
+}
+
+#lampara-neon-article {
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    border: solid 5px #ffdf12;
+}
+
+#foto-inv-lampara-neon {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.rayos-x {
+    position: relative;
+    grid-area: 2/3/2/4;
+}
+
+#rayos-x-article {
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    border: solid 5px #ffdf12;
+}
+
+#foto-inv-rayos-x {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.contact-grid{
+    display: grid;
+    grid-template-columns: 50fr, 50fr;
+    grid-template-rows: 50fr, 0.1fr, 50fr;
+    grid-gap: 1.25em;
+}
+
+.contacto{
+    display: grid;
+    grid-area:1/1/1/3;
+    border: 5px solid #ffdf12;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 25px;
+}
+form{
+    grid-area: 1/1/1/2;
+    padding:1.5px;
+}
+form label{
+    padding: 15px;
+}
+input[type=text], input[type=email], textarea{
+    border: solid 2px #ffdf12;
+    background-color: #3a3737;
+    color: #f6f2dd;
+    margin: 10px;
+    font-family: 'Playfair Display', serif;
+}
+  
+::placeholder{
+    color:#bdaea4;
+    font-family: 'Playfair Display', serif;
+}
+input[type=submit]{
+    margin-left:70px;
+    padding: 5px 80px;
+    color: #3a3737;
+    background-color: #ffdf12;
+    border:0em;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+.foto-contacto{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    grid-area: 1/2/1/3;
+    
+}
+.lugares {
+    display: grid;
+    grid-area: 2/1/3/3;
+    gap:1.25em;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+.lugares h2{
+    grid-area: 2/1/2/3;
+    padding: 0;
+    margin: 0;
+}
+.museo-belgrado {
+    grid-area: 3/2/3/3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+}
+.centro-de-ciencias {
+    grid-area: 3/1/3/2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+    background-color:#3a3737;
+    color:#f6f2dd;
+    justify-content: center;
+    padding:10px;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-inv{
+        grid-template-columns: [c1] auto;
+        grid-template-rows: repeat(6,25fr);
+    }
+    .corriente-alterna {
+        grid-area: 1/1/1/1;
+    }
+   .central-hidroelectrica {
+       grid-area: 2/1/2/1;
+   }
+   .radio {
+       grid-area: 3/1/3/1;
+   }
+   .bobina {
+       grid-area: 4/1/4/1;
+   }
+   .lampara-neon {
+       grid-area: 5/1/5/1;
+   }
+   .rayos-x {
+       grid-area: 6/1/6/1;
+   }
+   .section-bio {
+       display: grid;
+       grid-template-columns: [c1] auto;
+       grid-template-rows: repeat(2, auto);
+    }
+    .bio{
+        grid-area: 2/1/2/1;
+        margin-left: 0.2em;
+    }
+    .foto-bio{
+        grid-area: 1/1/1/1;
+        margin-right: 0.5em;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        
+    }
+
+}
+ @media only screen and ((min-width: 600px) and (max-width: 768px)) {
+    .grid-inv {
+            grid-template-columns: repeat(2, 10fr);
+            grid-template-rows: repeat(3, 25fr);
+    }
+    .corriente-alterna {
+        grid-area: 1/1/1/1;
+    }
+    .central-hidroelectrica {
+        grid-area: 1/2/1/2;
+    }
+    .radio {
+        grid-area: 2/1/2/1;
+    }
+    
+    .bobina {
+        grid-area: 2/2/2/2;
+    }
+    
+    .lampara-neon {
+        grid-area: 3/1/3/1;
+    }
+    
+    .rayos-x {
+        grid-area: 3/2/3/2;
+    }
+ }
+
