@@ -274,7 +274,11 @@ footer{
     color:#f6f2dd;
     justify-content: center;
     padding:10px;
-    
+}
+footer a img {
+    padding: 5px;
+    height: 1.5em;
+    width: 1.5em;
 }
 
 @media only screen and (max-width: 600px) {
