@@ -57,19 +57,22 @@ p{
 .section-grid{
     display: grid;
     grid-template-columns: 50fr auto;
-    grid-template-rows: auto;
+    grid-template-rows: 100fr;
     gap: 1em;
-    align-content: space-evenly;
-    box-sizing: content-box;
-    padding:10px;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
     margin:25px;
     border: solid 5px #ffdf12;
 }
 .bio{
     grid-area: 1/1/1/2;
-    padding: 15px;
+    margin-bottom: 20px;
+}
+.section-bio .bio p{
+    padding:15px;
+    margin: 15px;
     text-align: justify;
-    /*border: solid 5px  #ffdf12;*/
 }
 .foto-bio{
     grid-area: 1/2/1/3;
