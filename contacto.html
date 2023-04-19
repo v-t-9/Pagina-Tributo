@@ -17,7 +17,7 @@
         <nav class="nav-contenedor">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="inventos.html">Inventions</a></li>
+                <li><a href="inventos.html">Inventions and contributions</a></li>
                 <li><a href="contacto.html">Contact</a></li>
             </ul>
         </nav>
@@ -28,21 +28,37 @@
         <section class= "contacto">
             <form action="">
                 <h3>Contact</h3>
-                <label for="nombre">
-                    Name:
-                </label>
-                <input type="text" id="nombre" size="30" />
-                <br>
-                <label for="apellido">
-                    Surname:
-                </label>
-                <input type="text" id="apellido" size="30" />
-                <br>
-                <label for="email">
-                    E-mail:
-                </label>
-                <input type="email" id="correoElecronico" size="20" />
-                <br>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="nombre">
+                                Name:
+                            </label>
+                        </td>
+                        <td><input type="text" id="nombre" size="30" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="apellido">
+                                Surname:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" id="apellido" size="30" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">
+                                E-mail:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="email" id="correoElecronico" size="30" />
+                        </td>
+                    </tr>
+
+                </table>
                 <textarea name="mensaje" id="mensaje" cols="45" rows="25" placeholder="Your message..."></textarea>
                 <br>
                 <input type="submit" name="enviar" id="btn-enviar">
